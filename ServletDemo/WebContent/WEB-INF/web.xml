@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Example1</servlet-name>
+    <servlet-class>com.servletdemo.addServletEg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example1</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Example2</servlet-name>
+    <servlet-class>com.servletdemo.subtractServletEg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example2</servlet-name>
+    <url-pattern>/sub</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Example3</servlet-name>
+    <servlet-class>com.servletdemo.MultiplyServletEg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example3</servlet-name>
+    <url-pattern>/multiply1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Example4</servlet-name>
+    <servlet-class>com.servletdemo.DivideServletEg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example4</servlet-name>
+    <url-pattern>/divide</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
